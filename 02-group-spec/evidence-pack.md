@@ -73,11 +73,29 @@ escalation “Gọi lễ tân” khi low-confidence, red flag, hoặc user báo 
 
 ## 6. Evidence đổi SPEC như thế nào?
 
-- Đổi user chính.
-- Đổi pain statement.
-- Đổi build slice.
-- Đổi Auto/Aug decision.
-- Đổi 4 paths.
-- Đổi failure mode.
-- Đổi owner/test plan.
+- [x] Đổi user chính. → `thin-spec.md` §1 (khách **in-stay** đã check-in, gia đình, tiếng Việt, property Phú Quốc)
+- [x] Đổi pain statement. → `thin-spec.md` §3 (tiện ích trong ngày bị chôn; không có Q&A 1-turn)
+- [x] Đổi build slice. → `thin-spec.md` §4 (Q&A KB + confidence + Gọi lễ tân; **không** full concierge / VinWonders Day 06)
+- [x] Đổi Auto/Aug decision. → `thin-spec.md` §5 (Augmentation + conditional escalation; không automation đặt spa/phòng)
+- [x] Đổi 4 paths. → `thin-spec.md` §6 (D1–D5: happy, low-confidence, failure spa, correction, red flag)
+- [x] Đổi failure mode. → `thin-spec.md` §7 (sai giờ shuttle / hallucination spa slot → threshold + Gọi lễ tân)
+- [x] Đổi owner/test plan. → `thin-spec.md` §8 (Nguyên: KB/evidence · Ánh: SPEC/repo/demo script · Tài: prototype + test D1–D5)
+
+Ghi rõ 1-2 thay đổi quan trọng:
+
+```text
+Thay đổi 1 — Build slice (quan trọng nhất):
+Trước evidence, nhóm định hướng “AI concierge” rộng cho Track B (có thể gộp VinWonders in-park
+hoặc lịch trình/đặt dịch vụ qua chat).
+Sau evidence, nhóm đổi thành slice hẹp: MyVinpearl — Q&A tiện ích in-stay (shuttle, ăn sáng, pool)
+tại một property (Phú Quốc), retrieve KB + cite + confidence, escalation Gọi lễ tân.
+Lý do: Self-use #1–#4 cho thấy pain là micro-task in-stay bị chôn, không phải thiếu booking;
+VinWonders analog chỉ củng cố gap ecosystem — đưa backlog, không build Day 06.
+
+Thay đổi 2 — Failure & escalation:
+Trước evidence, nhóm chưa chốt path khi AI không chắc hoặc hỏi realtime (spa slot).
+Sau evidence, nhóm đổi thành Augmentation + ngưỡng confidence; D3 không bịa slot spa;
+D5 red flag sức khỏe → Gọi lễ tân ngay (rule-based); pattern Marriott/Accor + review “tin lễ tân”.
+Lý do: Self-use spa + review chờ xe điện/tổng đài — sai thông tin hoặc bịa availability có hậu quả thực tại resort.
+```
 
