@@ -1,0 +1,43 @@
+# VinWonders agent tools — sync tên với app/tools/registry.py TOOL_FUNCTIONS
+tools:
+  - name: list_destinations
+    description: "Liệt kê các khu vực VinWonders có trong hệ thống."
+    parameters:
+      type: object
+      properties: {}
+
+  - name: resolve_site
+    description: "Tìm địa điểm / mã supplier từ tên hoặc mô tả (Nha Trang, Phú Quốc, VinWonders...)."
+    parameters:
+      type: object
+      properties:
+        query:
+          type: string
+          description: "Tên địa điểm hoặc đoạn text khách nhập"
+      required: [query]
+
+  - name: get_ticket_prices
+    description: "Lấy giá vé VinWonders theo mã site và ngày sử dụng."
+    parameters:
+      type: object
+      properties:
+        site_code:
+          type: string
+          description: "Mã supplier, ví dụ NTVW1, PQVW1"
+        visit_date:
+          type: string
+          description: "Ngày đi DD-MM-YYYY hoặc YYYY-MM-DD"
+      required: [site_code, visit_date]
+
+  - name: get_weather_forecast
+    description: "Thời tiết dự báo cho địa điểm (mock nếu chưa cấu hình OpenWeather)."
+    parameters:
+      type: object
+      properties:
+        location:
+          type: string
+          description: "Tên thành phố / khu vực"
+        date:
+          type: string
+          description: "Ngày (tùy chọn)"
+      required: [location]
