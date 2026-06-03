@@ -4,9 +4,10 @@ Thumbs.db
 .idea/
 .vscode/
 
-# Secrets (backend .env — KHÔNG commit key)
+# Secrets — không commit API key
 .env
 .env.local
+.env.*.local
 *.local
 .dev.vars
 
@@ -18,7 +19,7 @@ __pycache__/
 .pytest_cache/
 02-group-spec/backend/transcripts/
 
-# Node / frontend build
+# Node / frontend
 node_modules/
 dist/
 dist-ssr/
