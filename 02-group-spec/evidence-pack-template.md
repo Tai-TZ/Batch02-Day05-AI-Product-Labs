@@ -5,7 +5,7 @@ Nộp kèm thin SPEC cuối Day 05.
 ## 1. Nhóm và track
 
 **Tên nhóm:**  
-**Track:**  
+**Track:**  Travel & Hospitality
 **Product/app đã chọn:**  
 **Build slice đang nghĩ:**  
 
