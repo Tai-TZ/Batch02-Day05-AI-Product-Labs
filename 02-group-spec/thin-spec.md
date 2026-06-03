@@ -2,7 +2,7 @@
 
 Thin SPEC không phải PRD đầy đủ. Đây là bản cam kết đủ rõ để sáng Day 06 nhóm build ngay.
 
-*Nộp kèm: `evidence-pack-template.md`, `synthesis-decide-toolkit.md`*
+*Nộp kèm: `evidence-pack.md`, `synthesis-decide-toolkit.md`*
 
 ---
 
@@ -129,16 +129,16 @@ Owner kiểm thử path này là [Thành viên 3 — Test + D3 + D5].
 
 | Thành viên          | Việc phụ trách (chính)                                                                                     | Bằng chứng cần có trong repo                                                                             |
 | ------------------- | ---------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| Nguyễn Trọng Nguyên | **Research / evidence** — KB mock, screenshot self-use, bổ sung review App Store nếu thiếu                 | `data/kb-phu-quoc.json` (10–15 chunk); `assets/self-use-*.png`; cập nhật `evidence-pack-template.md`     |
+| Nguyễn Trọng Nguyên | **Research / evidence** — KB mock, screenshot self-use, bổ sung review App Store nếu thiếu                 | `data/kb-phu-quoc.json` (10–15 chunk); `assets/self-use-*.png`; cập nhật `evidence-pack.md`     |
 | Ngô Thị Ánh         | **SPEC + repo** — giữ thin SPEC / toolkit đồng bộ; README hướng dẫn chạy demo; script trình bày 3 phút     | `02-group-spec/*.md`; `README.md` (cách chạy + link 3 file spec); `demo/demo-script.md` (kịch bản D1–D5) |
-| Nguyễn Thành Tài    | **Prototype + test** — build UI chat in-stay, retrieve mock, nút **Gọi lễ tân**; chạy & ghi kết quả 5 path | `prototype/` (hoặc HTML); `test/results.md` (pass/fail D1–D5); video demo ~3 phút (link trong README)    |
+| Nguyễn Thành Tài    | **Prototype + test** — build UI chat in-stay, retrieve mock, nút **Gọi lễ tân**; chạy & ghi kết quả 5 path | `prototype/` (hoặc HTML); `test/results.md` (pass/fail D1–D5); demo ~3 phút (link trong README)          |
 
 
 **Phân công nhanh sáng Day 06:**  
 
 1. TV1 chốt KB → TV3 tích hợp retrieve.
 2. TV2 viết `demo-script.md` song song TV3 code happy path (D1).
-3. TV3 thêm D2–D5 + TV1/TV2 review 1 vòng trước quay video.
+3. TV3 thêm D2–D5 + TV1/TV2 review.
 
 **Definition of done Day 06:** Demo được 5 path; không bịa spa slot; red flag luôn escalate; repo có evidence + SPEC + prototype + kết quả test.
 
